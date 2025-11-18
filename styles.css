@@ -163,7 +163,7 @@ button#convertirme:hover {
 #img-mapa {
   position: relative;
   width: 97vw;
-  height: 68vh;
+  height: 65vh;
   display: block;
 }
 
@@ -189,7 +189,7 @@ button#convertirme:hover {
   position: relative;
   margin: 3%;
   width: 94vw;
-  height: 65vh;
+  height: 60vh;
   border-radius: 5%;
 }
 
