@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const gameContent = document.getElementById("game-content");
 
     // Mostrar el contenido principal al presionar START
-    // ESTE ES EL CÓDIGO CORREGIDO para asegurar la transición.
     startBtn.addEventListener("click", () => {
         startScreen.classList.add("hidden");
         gameContent.classList.remove("hidden");
