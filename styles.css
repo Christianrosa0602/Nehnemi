@@ -1,0 +1,204 @@
+body {
+  background-color: #2B140F; 
+  color: #E8CFAE; /* Color de texto  */
+  font-family: 'Press Start 2P', cursive;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Pantalla de inicio */
+#start-screen {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #3a2415 0%, #1a0f05 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffdd66; /* Dorado */
+  text-shadow: 2px 2px #7a4b00; /* Sombra oscura */
+}
+
+#logo { 
+  margin: 5%; 
+  border-radius: 50%;
+  max-width: 20%;
+  background-color: #ffdd66;
+}
+
+
+#start-screen .title {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+#start-screen .subtitle {
+  font-size: 10px;
+  margin-bottom: 30px;
+}
+
+#start-btn {
+  background-color: #F6C821;
+ color: #1a0f05;
+ border: 4px solid #f5deb3;
+ padding: 10px 25px;
+ font-family: 'Press Start 2P', cursive;
+ cursor: pointer;
+ transition: transform 0.2s, box-shadow 0.3s;
+}
+
+#start-btn:hover {
+ transform: scale(1.05);
+ box-shadow: 0 0 8px #ffdd66;
+}
+
+/* Clase para ocultar elementos */
+.hidden {
+ display: none !important; /* Importante para asegurar que se oculte */
+}
+
+/* Contenido principal */
+header {
+ background: linear-gradient(180deg, #3B1F14, #2B140F);
+ padding: 10px;
+ border-bottom: 4px solid #d4a017;
+ box-shadow: 0 0 8px #d4a017;
+}
+
+h1 {
+ margin: 5px 0;
+ color: #ffdd66;
+ text-shadow: 2px 2px #7a4b00;
+ font-size: 18px;
+}
+
+nav {
+ margin-top: 8px;
+}
+
+.nav-btn {
+ background: #3B1F14;
+ color: #E8CFAE;
+ border: 3px solid #F6C821;
+ padding: 8px 10px;
+ font-family: 'Press Start 2P', cursive;
+ cursor: pointer;
+ margin: 3px;
+ transition: 0.2s;
+}
+
+.nav-btn:hover {
+ background: #A4452C;
+ color: #E8CFAE;
+ box-shadow: 0 0 6px #ffdd66;
+}
+
+section {
+ display: none;
+}
+
+section.active {
+ display: block;
+}
+
+/* Sección Álbum */
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adaptable */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.npc {
+ border: 3px solid #d4a017;
+ margin: 5% 1%;
+ padding: 20px;
+ background-color: #3a2415;
+ text-shadow: 1px 1px #000;
+ font-size: 2vw;
+}
+
+.locked {
+ opacity: 0.4;
+ color: #7a4b00;
+}
+
+.unlocked {
+ color: #ffdd66;
+ font-size: 2vw;
+}
+
+.unlocked img {
+  position: relative;
+  width: 20vw;
+}
+
+/* Sección Templo */
+button#convertirme {
+ background-color: #d4a017;
+ color: #1a0f05;
+ padding: 10px 15px;
+ border: 3px solid #f5deb3;
+ font-family: 'Press Start 2P', cursive;
+ cursor: pointer;
+ margin-top: 20px;
+}
+
+button#convertirme:hover {
+ background-color: #ffdd66;
+}
+
+#mapa-interactivo {
+  position: relative;
+  width: 97vw; 
+  height: 72vh;
+  max-width: 900px;
+  margin: auto; 
+  border: 4px solid #d4a017;
+}
+
+#img-mapa {
+  position: relative;
+  width: 97vw;
+  height: 72vh;
+  display: block;
+}
+
+.punto-mapa {
+  position: absolute;
+  width: 12%;
+  height: 12%;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.punto-mapa:hover {
+  transform: scale(1.2);
+}
+
+#punto-casa-perros {
+  top: 40%;
+  left: 40%;
+}
+
+#npc-image img {
+  position: relative;
+  margin: 3%;
+  width: 94vw;
+  height: 70vh;
+  border-radius: 5%;
+}
+
+.btn-info {
+ background: #3B1F14;
+ color: #E8CFAE;
+ border: 1px solid #F6C821;
+ border-radius: 30px;
+ padding: 1vh 30vw;
+ font-family: 'Press Start 2P', cursive;
+ margin: 2%;
+}

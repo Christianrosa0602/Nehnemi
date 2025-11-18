@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nehnemi</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="start-screen">    
+    <img src="img/logo transparente 2.png" alt="logo" id="logo">
+    <h1 class="title">NEHNEMI</h1>
+    <p class="subtitle">Presiona START para explorar Guadalajara</p>
+    <button id="start-btn">▶ START</button>
+  </div>
+
+  <div id="game-content" class="hidden">
+    <header>
+      <h1>NEHNEMI</h1>
+      <nav>
+        <button class="nav-btn" data-section="mapa">MAPA</button>
+        <button class="nav-btn" data-section="album">ÁLBUM</button>
+        <button class="nav-btn" data-section="templo">TEMPLO</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="mapa" class="active">
+        <h2>MAPA DE GUADALAJARA</h2>
+        <!-- <p>Explora los lugares sagrados y descubre los secretos que guarda la ciudad.</p> -->
+        <div id="mapa-interactivo">
+          <img src="img/mapa.png" alt="Mapa Nehnemi" id="img-mapa">
+          <div class="punto-mapa" id="punto-casa-perros" data-npc="Doña-Carmen"></div>
+        </div>
+      </section>
+    
+      <section id="album">
+        <div class="album-grid">
+          <div class="npc locked">???</div>
+          <div class="npc locked">???</div>
+          <div class="npc unlocked">
+            <p>Doña Ana 🐾</p>
+            <img src="img/Doña-Ana.png" alt="Doña Ana">
+          </div>
+        </div>
+      </section>
+
+      <section id="templo">
+        <h2>TEMPLO DEL EXPLORADOR</h2>
+        <p>Desbloquea recompensas sagradas al convertirte en Explorador Legendario.</p>
+        <button id="convertirme">Convertirme</button>
+      </section>
+
+      <section id="casa-perros-info">
+        <div id="npc-image">
+          <img src="img/carta-DoñaAna.png" alt="Doña Ana">
+        </div>
+        <div><button class="btn-info" id="agregarNpc">Agregar</button></div>
+        <div><button class="btn-info" id="volver-mapa">Volver</button></div>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
